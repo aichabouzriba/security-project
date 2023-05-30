@@ -1,0 +1,154 @@
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+body {
+  font: 1em/1.618 Inter, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70vh;
+  padding: 80px;
+
+  color: #224;
+  background:
+    url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+    center / cover no-repeat fixed;
+}
+
+.card {
+  max-width: 700px;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 900px;
+  height: 710px;
+  padding: 20px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(10px);
+}
+
+
+.back{
+  width: 30px;
+  margin-top: -10px;
+  margin-left: -6px;
+  cursor: pointer;
+
+}
+
+.back:active {
+  position: relative;
+  top: 1px;
+}
+
+
+label, input, button {
+  display: block;
+  width: 60%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 140px
+
+}
+
+label {
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 7px 10px #cbced1, inset -6px -6px 10px white;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: #0a0c17;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 20px 20px #cbced1, -6px -6px 10px white;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: none;
+  background-color: slategray;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.result{
+  max-width: 600px;
+  min-height: 310px;
+  margin-left: 40px;
+
+  width: 700px;
+  height: 410px;
+  padding: 8px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.25);
+
+  font-size: 20px;
+  backdrop-filter: blur(10px);
+  vertical-align: middle;
+}
+
+h3{
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: -10px;
+
+}
