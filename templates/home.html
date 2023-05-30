@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PassLock - HomePage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='lock.png') }}">
+</head>
+<body>
+
+
+<div class="card">
+    <img src="{{ url_for('static', filename='lock.png') }} " class="lock">
+    <img src="{{ url_for('static', filename='passlock.png') }}", class="passlock">
+ <form class="inputs" >
+      <label><b>Welcome to our Password Strength Tester and Generator!</b></label>
+     <h3>PassLock provides you with two useful tools to help you create strong and secure passwords: a password strength tester and a password generator.</h3>
+     <h3><b>The password strength tester</b> evaluates the strength level of your password and gives you feedback on how to improve it. <br><b>The password generator</b> allows you to create random, strong passwords and passphrases.</h3>
+     <h2><b>Using strong and unique passwords is crucial for your online security, <br>so don't hesitate to try out our tools and ensure your online safety.</b></h2>
+<br>
+     <button type="submit" onclick="window.open('/test')">TEST PASSWORD STRENGTH</button>
+     <button type="submit" onclick="window.open('/generate')">GENERATE PASSWORD/PASSPHRASE</button>
+
+ </form>
+
+
+</div>
+</body>
+</html>

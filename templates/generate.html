@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PassLock - Generator </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylegenerate.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='lock.png') }}">
+</head>
+<body>
+<div class="card">
+
+ <form class="gen1" method="POST" action="password_gen">
+     <img src="{{ url_for('static', filename='home.png') }}" class="back" onclick="window.open('/','_self')">
+
+     <input type="text" placeholder="Password" value="{{ output1 }}" disabled />
+     <button type="submit">GENERATE PASSWORD</button>
+ </form>
+
+    <form class="gen2" method="POST" action="passphrase_gen">
+     <input type="text" placeholder="Passphrase" value="{{ output2 }}" disabled  />
+     <button type="submit">GENERATE PASSPHRASE</button>
+    </form>
+
+
+</div>
+</body>
+</html>
